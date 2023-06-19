@@ -39,7 +39,7 @@ class NDEs(plotter.PlotPosterior):
         shape [(obs_length_1, obs_length_1), (obs_length_2, obs_length_2), ...].
         If there is no covariance for some observations, the covariance matrix 
         should be set to None. e.g. [cov_matrix_1, None, cov_matrix_3]. Default: None
-    init_chain : array-like, optional
+    init_chain : None or array-like, optional
         The initial ANN or MCMC chain, which is usually based on prvious parameter
         estimation. Default: None
     init_params : None or array-like, optional
