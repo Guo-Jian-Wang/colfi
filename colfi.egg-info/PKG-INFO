@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: colfi
+Version: 0.6.0
+Summary: Cosmological Likelihood-Free Inference with Neural Density Estimators
+Home-page: UNKNOWN
+Author: Guojian Wang
+Author-email: gjwang2018@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: pip,ANN,MDN,MNN
+Platform: any
