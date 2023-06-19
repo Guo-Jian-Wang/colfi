@@ -1,7 +1,7 @@
 CoLFI
 =====
 
-**CoLFI (Cosmological Likelihood-Free Inference with Neural Density Estimators)**
+**CoLFI (Cosmological Likelihood-Free Inference)**
 
 CoLFI is a framework to estimate cosmological parameters based on neural density estimators. It is an alternative to the traditional `Markov chain Monte Carlo (MCMC) <https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo>`_ method and has advantages over MCMC.
 
