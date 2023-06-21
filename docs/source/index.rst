@@ -1,7 +1,7 @@
 CoLFI
 =====
 
-**CoLFI** (``Co``\smological ``L``\ikelihood-``F``\ree ``I``\nference) is a framework to estimate cosmological parameters based on neural density estimators (ANN, MDN, and MNN) proposed by `Guo-Jian Wang, Cheng Cheng, Yin-Zhe Ma, et al. (2023) <>`_.
+**CoLFI** (``Co``\smological ``L``\ikelihood-``F``\ree ``I``\nference) is a framework to estimate cosmological parameters based on neural density estimators (ANN, MDN, and MNN) proposed by `Guo-Jian Wang, Cheng Cheng, Yin-Zhe Ma, et al. (2023) <https://arxiv.org/abs/2306.11102>`_.
 
 It is an alternative to the traditional `Markov chain Monte Carlo (MCMC) <https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo>`_ method and has advantages over MCMC.
 
