@@ -1,7 +1,7 @@
 CoLFI
 =====
 
-**CoLFI** (``Co``\smological ``L``\ikelihood-``F``\ree ``I``\nference) is a framework to estimate cosmological parameters based on neural density estimators (ANN, MDN, and MNN) proposed by `Guo-Jian Wang, Cheng Cheng, Yin-Zhe Ma, et al. (2023) <https://arxiv.org/abs/2306.11102>`_.
+**CoLFI** (``Co``\smological ``L``\ikelihood-``F``\ree ``I``\nference) is a framework to estimate cosmological parameters based on neural density estimators (ANN, MDN, and MNN) proposed by `Guo-Jian Wang, Cheng Cheng, Yin-Zhe Ma, et al. (2023) <https://doi.org/10.3847/1538-4365/ace113>`_.
 
 It is an alternative to the traditional `Markov chain Monte Carlo (MCMC) <https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo>`_ method and has advantages over MCMC.
 
@@ -13,7 +13,7 @@ As a general method of parameter estimation, CoLFI can be used for research in m
 .. image:: https://img.shields.io/badge/License-MIT-green.svg?style=flat
     :target: https://github.com/Guo-Jian-Wang/colfi/blob/master/LICENSE
 .. image:: https://img.shields.io/badge/ApJS-CoLFI-blue.svg?style=flat
-    :target: https://arxiv.org/abs/2306.11102
+    :target: https://doi.org/10.3847/1538-4365/ace113
 .. image:: https://img.shields.io/badge/arXiv-2306.11102-gold.svg?style=flat
     :target: https://arxiv.org/abs/2306.11102
 
@@ -21,7 +21,7 @@ As a general method of parameter estimation, CoLFI can be used for research in m
 Attribution
 ===========
 
-If you use this code in your research, please cite `Guo-Jian Wang, Cheng Cheng, Yin-Zhe Ma, et al., "CoLFI: Cosmological Likelihood-free Inference with Neural Density Estimators", ApJS, XX, XX, (2023) <https://arxiv.org/abs/2306.11102>`_.
+If you use this code in your research, please cite `Guo-Jian Wang, Cheng Cheng, Yin-Zhe Ma, et al., "CoLFI: Cosmological Likelihood-free Inference with Neural Density Estimators", ApJS, 268, 7, (2023) <https://doi.org/10.3847/1538-4365/ace113>`_.
 
 If you use the MDN method of this code, please also cite `Guo-Jian Wang, Cheng Cheng, Yin-Zhe Ma, Jun-Qing Xia, "Likelihood-free Inference with the Mixture Density Network", ApJS, 262, 24 (2022) <https://doi.org/10.3847/1538-4365/ac7da1>`_.
 

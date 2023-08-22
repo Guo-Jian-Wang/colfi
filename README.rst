@@ -7,7 +7,7 @@ CoLFI is a framework to estimate cosmological parameters based on neural density
 
 CoLFI can be applied to the research of cosmology and even other broader scientific fields.
 
-It is proposed by `Guo-Jian Wang, Cheng Cheng, Yin-Zhe Ma, et al. (2023) <https://arxiv.org/abs/2306.11102>`_.
+It is proposed by `Guo-Jian Wang, Cheng Cheng, Yin-Zhe Ma, et al. (2023) <https://doi.org/10.3847/1538-4365/ace113>`_.
 
 
 Documentation
@@ -19,7 +19,7 @@ The documentation can be found at `colfi.readthedocs.io <https://colfi.readthedo
 Attribution
 -----------
 
-If you use this code in your research, please cite `Guo-Jian Wang, Cheng Cheng, Yin-Zhe Ma, et al., "CoLFI: Cosmological Likelihood-free Inference with Neural Density Estimators", ApJS, XX, XX, (2023) <https://arxiv.org/abs/2306.11102>`_.
+If you use this code in your research, please cite `Guo-Jian Wang, Cheng Cheng, Yin-Zhe Ma, et al., "CoLFI: Cosmological Likelihood-free Inference with Neural Density Estimators", ApJS, 268, 7, (2023) <https://doi.org/10.3847/1538-4365/ace113>`_.
 
 If you use the MDN method of this code, please also cite `Guo-Jian Wang, Cheng Cheng, Yin-Zhe Ma, Jun-Qing Xia, "Likelihood-free Inference with the Mixture Density Network", ApJS, 262, 24 (2022) <https://doi.org/10.3847/1538-4365/ac7da1>`_.
 

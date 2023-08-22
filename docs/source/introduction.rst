@@ -97,7 +97,7 @@ where the precision matrix :math:`\boldsymbol\Sigma^{-1}_i` can be characterized
     :align: center
     :width: 96 %
     
-    Figure 4. General structure of MNN (`Wang et al. (2023) <https://arxiv.org/abs/2306.11102>`_).
+    Figure 4. General structure of MNN (`Wang et al. (2023) <https://doi.org/10.3847/1538-4365/ace113>`_).
 
 
 Training and Parameter Estimation
