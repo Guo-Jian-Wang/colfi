@@ -103,6 +103,7 @@ class Transfer(object):
                 self._prints('\nTraining the network using 1 GPU', prints=prints)
         else:
             self.use_GPU = False
+            self.use_multiGPU = False
             self._prints('\nTraining the network using CPU', prints=prints)
     
     def transfer_net(self, use_DDP=False, device_ids=None, prints=True):
