@@ -2,6 +2,7 @@
 
 from . import cosmic_params
 import numpy as np
+from scipy.stats import gaussian_kde
 try:
     from scipy.ndimage import gaussian_filter
 except ImportError:
@@ -68,12 +69,20 @@ def _quantile(x, q, weights=None):
         cdf = np.append(0, cdf)
         return np.interp(q, cdf, x[idx]).tolist()
 
-def pdf_1(X, bins=100, smooth=5):
-    """Estimate the probability density function for the given data.
-    """
-    hist = np.histogram(X, bins, density=True) #normed=True --> density=True
-    P, x = hist[0], hist[1]
-    x = (x[:-1]+x[1:])/2.0
+# def pdf_1(X, bins=100, smooth=5):
+#     """Estimate the probability density function for the given data.
+#     """
+#     hist = np.histogram(X, bins, density=True) #normed=True --> density=True
+#     P, x = hist[0], hist[1]
+#     x = (x[:-1]+x[1:])/2.0
+#     P = gaussian_filter(P, smooth)
+#     return x, P
+
+def pdf_2(X, smooth):
+    ''' the same as pdf_1, but using different method '''
+    kde = gaussian_kde(X)
+    x = np.linspace(min(X), max(X), 100)
+    P = kde(x)
     P = gaussian_filter(P, smooth)
     return x, P
 
@@ -151,7 +160,8 @@ class Chains(object):
         params_n = Chains.params_n(chain)
         best = np.zeros(params_n)
         for i in range(params_n):
-            x, prob = pdf_1(chain[:,i], bins, smooth)
+            # x, prob = pdf_1(chain[:,i], bins, smooth)
+            x, prob = pdf_2(chain[:,i], smooth)
             best_idx = np.where(prob==np.max(prob))
             best[i] = x[best_idx]
         return best

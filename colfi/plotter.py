@@ -823,7 +823,8 @@ class PlotHparamsEffect(object):
                     # print(self.dev_tmp_2.mean())
                     plt.figure()
                     plt.hist(self.dev_tmp_2, bins=bins, density=True)
-                    x, prob = su.pdf_1(self.dev_tmp_2, bins, smooth)
+                    # x, prob = su.pdf_1(self.dev_tmp_2, bins, smooth)
+                    x, prob = su.pdf_2(self.dev_tmp_2, smooth)
                     plt.plot(x, prob, 'r', lw=2)
                     plt.title(self.nde_type[i] + ' (%s=%s; %s points; $%.3f_{-%.3f}^{+%.3f}$)'%(self.key, v, len(self.dev_tmp_2), dev_bestFit[0][0],dev_bestFit[0][1],dev_bestFit[0][2]), 
                                fontsize=16)
