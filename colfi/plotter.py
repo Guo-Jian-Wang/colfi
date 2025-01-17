@@ -308,7 +308,7 @@ class PlotPosterior(PosteriorInfo):
         panel_model = BestFitsData(self.chain_all, self.chain, param_labels=self.param_labels, burnInEnd_step=self.burnInEnd_step, 
                                    nde_type_pair=self.nde_type_pair, show_initParams=show_initParams, init_params=self.init_params, 
                                    chain_true=self.chain_true, label_true=self.label_true, show_idx=self.show_idx)
-        self.fig_steps = pl.MultiplePanels(panel_model).plot(layout_adjust=layout_adjust, ticks_size=10, major_locator_integers=[True,False])
+        self.fig_steps = pl.MultiplePanels(panel_model).plot(layout_adjust=layout_adjust, ticks_size=10)
         plt.suptitle(suptitle, fontsize=16)
         if save_fig:
             pl.savefig(self.path+'/figures', 'steps%s_%s_%s.pdf'%(self.file_identity_str, self.nde_type_str,self.randn_num), self.fig_steps)
@@ -367,7 +367,7 @@ class PlotPosterior(PosteriorInfo):
         if self.burnInEnd_step is None:
             return None
         panel_model = LossesData(self.good_losses, alpha=alpha, text_labels=self.nde_type_pair[1], show_minLoss=show_minLoss)
-        self.fig_loss = pl.MultiplePanels(panel_model).plot(layout_adjust=layout_adjust, ticks_size=10, major_locator_integers=[True,False])
+        self.fig_loss = pl.MultiplePanels(panel_model).plot(layout_adjust=layout_adjust, ticks_size=10)
         if save_fig:
             pl.savefig(self.path+'/figures', 'losses%s_%s_%s.pdf'%(self.file_identity_str, self.nde_type_pair[1],self.randn_num), self.fig_loss)
     
