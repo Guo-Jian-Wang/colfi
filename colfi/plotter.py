@@ -95,7 +95,7 @@ class BestFitsData(object):
             datasets.append(data)
         return datasets
     
-    def panel(self, data):
+    def panel(self, data, fig, ax):
         #initial parameter
         if self.show_initParams:
             plt.fill_between([0, data['steps_n']+1], data['init_param'][0], data['init_param'][1], color='#FF3030', label='Initial '+data['labels'][1], alpha=0.15) ##FF3030, 63B8FF
@@ -188,7 +188,7 @@ class LossesData(object):
             datasets.append(data)
         return datasets
     
-    def panel(self, data):
+    def panel(self, data, fig, ax):
         if self.show_minLoss:
             plt.plot(data['x'], data['train_loss'], label=r'Training set $(\mathcal{L}_{\rm train}=%.3f)$'%(data['train_loss_mean']))
         else:
@@ -550,7 +550,7 @@ class BestPredictedData(object):
             datasets.append(data)
         return datasets
 
-    def panel(self, data):
+    def panel(self, data, fig, ax):
         plt.plot(data['sim_param'], data['pred_param'], '.')
         plt.plot(data['pp'], data['pp'], 'r', lw=1.618)
         if self.show_reErr:
